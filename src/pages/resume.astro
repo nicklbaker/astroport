@@ -1,131 +1,121 @@
 ---
 const pageTitle = "Resume - Nick Baker";
+import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHead from '../components/PageHead.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		
-        <div class="container">
-            <PageHead />
-            <main class="page">
-                <section class="resume-section">
-                    <h2>Resume</h2>
-                    <h3>Summary</h3>
-                    <p>
-                        Collaborative UX designer with 12 years of experience. I love building simple solutions to complex problems and creating intuitive designs. Good communication, both internally and with customers, makes the best products.
-                    </p>
-        
-                    <h3>Experience</h3>
-                    <div class="job">
-                        <h4>Freelance Designer</h4>
-                        <p><strong>Aug 2023 – Present</strong> | Seattle, WA</p>
-                        <ul>
-                            <li>Served multiple clients on projects ranging from graphic design to UX and prototyping.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>Sr UX Designer</h4>
-                        <p><strong>INRIX · Contract</strong> | Oct 2021 – Aug 2023 | Kirkland, WA</p>
-                        <ul>
-                            <li>Created application features for INRIX’s SAAS offerings using Figma.</li>
-                            <li>Collaborated with product managers and developers to craft solutions for customer needs.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>Sr Designer</h4>
-                        <p><strong>Microsoft · Contract</strong> | Nov 2018 – Jun 2021 | Redmond, WA</p>
-                        <ul>
-                            <li>Crafted emails, forms, and landing pages for the Microsoft Visual Studio Developer Division.</li>
-                            <li>Managed and maintained the Dynamics 365 Marketing automation platform.</li>
-                            <li>Wrote documentation related to the platform for the Visual Studio team.</li>
-                            <li>Onboarded new users and assisted them in running autonomously.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>Sr UX Designer</h4>
-                        <p><strong>Microsoft · Contract</strong> | Jan 2018 – Apr 2018 | Redmond, WA</p>
-                        <ul>
-                            <li>Designed landing page experiences for Visual Studio.</li>
-                            <li>Created A/B testing variants using Figma and Photoshop.</li>
-                            <li>Implemented tests using HTML, CSS, and JavaScript on the Optimizely platform.</li>
-                            <li>Gathered qualitative and quantitative user acquisition data and distributed it to stakeholders.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>Content Manager</h4>
-                        <p><strong>Onvia · Full-time</strong> | Jul 2017 – Dec 2017 | Seattle, WA</p>
-                        <ul>
-                            <li>Developed new portions of the website using HTML, CSS, and JavaScript.</li>
-                            <li>Conducted landing page A/B testing using Optimizely.</li>
-                            <li>Ran reports on lead generation and user behavior from Marketo and Google Analytics.</li>
-                            <li>Distributed weekly reports to the team.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>Product Designer</h4>
-                        <p><strong>Microsoft · Contract</strong> | Jun 2016 – Jun 2017 | Redmond, WA</p>
-                        <ul>
-                            <li>Created features for Microsoft PowerApps using Adobe products, Sketch, and eventually Figma.</li>
-                            <li>Designed dashboards to enhance usage and implement cross-product branding.</li>
-                            <li>Developed landing page frameworks for easy A/B testing.</li>
-                            <li>Designed and built email templates using Sketch and HTML.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>UX Designer</h4>
-                        <p><strong>Smartsheet · Full-time</strong> | Feb 2013 – Apr 2016 | Bellevue, WA</p>
-                        <ul>
-                            <li>Led design efforts for the native Smartsheet mobile app (Android) and multiple web app features.</li>
-                            <li>Collaborated with the marketing team on design and development.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h4>UI/UX Designer</h4>
-                        <p><strong>iLink Systems · Full-time</strong> | Jun 2012 – Jan 2013 | Redmond, WA</p>
-                        <ul>
-                            <li>Designed user interfaces for native Windows applications and SharePoint frameworks.</li>
-                            <li>Created interactive point of sale applications.</li>
-                        </ul>
-                    </div>
-        
-                    <h3>Tools</h3>
-                    <div class="job">
-                        <ul class="tools">
-                            <li>Figma</li>
-                            <li>Sketch</li>
-                            <li>Adobe Creative Suite</li>
-                            <li>HTML, CSS, jQuery</li>
-                            <li>WordPress, Drupal</li>
-                        </ul>
-                    </div>  
-                    <h3>Skills</h3>
-                    <div class="job">
-                        <ul class="skills">
-                            <li>User Experience (UX) Design</li>
-                            <li>Interaction Design</li>
-                            <li>User Research</li>
-                            <li>Wireframing and Prototyping</li>
-                            <li>Usability Testing</li>
-                            <li>Visual Design</li>
-                        </ul>
-                    </div>
-        
-                    <h3>Education</h3>
-                    <p><strong>Bachelor of Science – Graphic Communication</strong></p>
-                    <p>Minnesota State University Moorhead</p>
-                </section>
-            </main>
-            <Footer />
-            </div>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+    <div class="container">
+    <PageHead />
+    <main class="page">
+    <section class="resume-section">
+        <h2>Resume</h2>
+        <h3>Summary</h3>
+        <p>
+            Collaborative UX designer with 12 years of experience. I love building simple solutions to complex problems and creating intuitive designs. Good communication, both internally and with customers, makes the best products.
+        </p>
+
+        <h3>Experience</h3>
+        <div class="job">
+            <h4>Freelance Designer</h4>
+            <p><strong>Aug 2023 – Present</strong> | Seattle, WA</p>
+            <ul>
+                <li>Served multiple clients on projects ranging from graphic design to UX and prototyping.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>Sr UX Designer</h4>
+            <p><strong>INRIX · Contract</strong> | Oct 2021 – Aug 2023 | Kirkland, WA</p>
+            <ul>
+                <li>Created application features for INRIX’s SAAS offerings using Figma.</li>
+                <li>Collaborated with product managers and developers to craft solutions for customer needs.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>Sr Designer</h4>
+            <p><strong>Microsoft · Contract</strong> | Nov 2018 – Jun 2021 | Redmond, WA</p>
+            <ul>
+                <li>Crafted emails, forms, and landing pages for the Microsoft Visual Studio Developer Division.</li>
+                <li>Managed and maintained the Dynamics 365 Marketing automation platform.</li>
+                <li>Wrote documentation related to the platform for the Visual Studio team.</li>
+                <li>Onboarded new users and assisted them in running autonomously.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>Sr UX Designer</h4>
+            <p><strong>Microsoft · Contract</strong> | Jan 2018 – Apr 2018 | Redmond, WA</p>
+            <ul>
+                <li>Designed landing page experiences for Visual Studio.</li>
+                <li>Created A/B testing variants using Figma and Photoshop.</li>
+                <li>Implemented tests using HTML, CSS, and JavaScript on the Optimizely platform.</li>
+                <li>Gathered qualitative and quantitative user acquisition data and distributed it to stakeholders.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>Content Manager</h4>
+            <p><strong>Onvia · Full-time</strong> | Jul 2017 – Dec 2017 | Seattle, WA</p>
+            <ul>
+                <li>Developed new portions of the website using HTML, CSS, and JavaScript.</li>
+                <li>Conducted landing page A/B testing using Optimizely.</li>
+                <li>Ran reports on lead generation and user behavior from Marketo and Google Analytics.</li>
+                <li>Distributed weekly reports to the team.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>Product Designer</h4>
+            <p><strong>Microsoft · Contract</strong> | Jun 2016 – Jun 2017 | Redmond, WA</p>
+            <ul>
+                <li>Created features for Microsoft PowerApps using Adobe products, Sketch, and eventually Figma.</li>
+                <li>Designed dashboards to enhance usage and implement cross-product branding.</li>
+                <li>Developed landing page frameworks for easy A/B testing.</li>
+                <li>Designed and built email templates using Sketch and HTML.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>UX Designer</h4>
+            <p><strong>Smartsheet · Full-time</strong> | Feb 2013 – Apr 2016 | Bellevue, WA</p>
+            <ul>
+                <li>Led design efforts for the native Smartsheet mobile app (Android) and multiple web app features.</li>
+                <li>Collaborated with the marketing team on design and development.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h4>UI/UX Designer</h4>
+            <p><strong>iLink Systems · Full-time</strong> | Jun 2012 – Jan 2013 | Redmond, WA</p>
+            <ul>
+                <li>Designed user interfaces for native Windows applications and SharePoint frameworks.</li>
+                <li>Created interactive point of sale applications.</li>
+            </ul>
+        </div>
+
+        <h3>Tools</h3>
+        <div class="job">
+            <ul class="tools">
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>Adobe Creative Suite</li>
+                <li>HTML, CSS, jQuery</li>
+                <li>WordPress, Drupal</li>
+            </ul>
+        </div>  
+        <h3>Skills</h3>
+        <div class="job">
+            <ul class="skills">
+                <li>User Experience (UX) Design</li>
+                <li>Interaction Design</li>
+                <li>User Research</li>
+                <li>Wireframing and Prototyping</li>
+                <li>Usability Testing</li>
+                <li>Visual Design</li>
+            </ul>
+        </div>
+
+        <h3>Education</h3>
+        <p><strong>Bachelor of Science – Graphic Communication</strong></p>
+        <p>Minnesota State University Moorhead</p>
+    </section>
+    </main>
+    <Footer />
+    </div>
+</BaseLayout>

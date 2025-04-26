@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'INRIX Groups '
 pubDate: 2022-07-01
 description: 'Groups feature of the INRIX Signals app'
@@ -8,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# INRIX Groups
+## INRIX Groups
 
 Our customers needed a simple way to segment their data and assign them to individuals or groups of individuals in their organization. Given that our data is map based, it made sense to make that the primary display for this project. Users could draw their own regions, encircling whichever data points they saw fit or import existing geometry via json. Importing in this way is common and most customers have predefined regions like this.
 

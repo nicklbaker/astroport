@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'INRIX Fintech'
 pubDate: 2025-04-26
 description: 'Fintech proposal for INRIX'
@@ -8,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# INRIX Fintech
+## INRIX Fintech
 
 INRIX was looking for a way to use their traffic data to potentially predict earnings for brick and mortar stores as well as in-person entertainment companies. For our prototype, we used a company almost completely dependent on foot traffic, Six Flags. If we could directly correlate traffic arriving at their parking lots with quarterly earnings, we had success.
 

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'INRIX Signals '
 pubDate: 2022-07-01
 description: 'Detailed view of the INRIX Signals App'
@@ -8,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# INRIX Signals
+## INRIX Signals
 
 We needed to get more granular with the data we were showing. Our current intersection display was great for showing total traffic for a given direction but failed to show details on the exact route a vehicle was taking. The solution was to take our existing model and use it to open up a more detailed panel showing every movement for an existing approach.
 

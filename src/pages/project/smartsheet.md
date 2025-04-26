@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'Smartsheet'
 pubDate: 2022-07-01
 description: 'Projects when I worked at Smartsheet'
@@ -8,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# Smartsheet
+## Smartsheet
 
 It’s been a while since this app was released but still something I’m proud of. Smartsheet was in need of an android app to parody features from their existing iOS app. After initial designs were put out, the decision was made to launch features not in the iOS app. Android was the perfect testbed for mobile features before adding them to iOS which we predicted would have a much larger install base than our yet to be released Android app.
 

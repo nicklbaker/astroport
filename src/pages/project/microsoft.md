@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'Microsoft Projects'
 pubDate: 2025-04-26
 description: 'Projects worked on while at Microsoft'
@@ -8,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# Microsoft
+## Microsoft
 
 This project is a bit outside the realm of ux/ui and falls more into the marketing field. Nonetheless, it was an interesting project. When a user downloads Visual Studio, there is no customization that takes place. Just a full download, then the user figured out what they needed after the fact. Our goal was to narrow down the options from “everything” to “some things” and provide the user with what they would need for a given project or language. So, if someone wanted to use VS for a python project, we would package everything they need for that to hopefully limit setup time.
 
