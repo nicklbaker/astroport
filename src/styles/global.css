@@ -1,7 +1,7 @@
 html {
     min-height:100vh;
     background-color:#4B8E8C;
-    background-image: url('assets/nbd-mountainbg.png');
+    background-image: url('../assets/nbd-mountainbg.png');
     background-size: 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
