@@ -1,0 +1,364 @@
+html {
+    min-height:100vh;
+    background-color:#4B8E8C;
+    background-image: url('assets/nbd-mountainbg.png');
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+  .homecontainer {
+    width: 1000px;
+    margin: 0 auto;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header .pagetitle {
+    display: block; 
+    line-height: 160px;
+    font-size: 116px;
+}
+
+header a {
+    cursor: pointer;
+    text-decoration: none;;
+}
+
+header nav {
+    display: block;
+    margin-right: 20px;
+}
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header nav a:hover {
+    color: #DF2631;
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+
+main{
+    width: 800px;
+    display: block;
+    width:100%;
+}
+
+
+main.hometitle {
+    width: 1000px;
+    margin-top: 200px
+}
+
+main.page{
+    margin: 0 auto;
+    width: 800px;
+}
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+.left-image {
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    display: block;
+}
+.left-image img {
+    display: block;
+    width: 334px;
+    height: 332px;
+    margin: 0 auto;
+    border-width: 20px 20px 100px 20px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: -5px 5px 0px #A6A743;
+}
+.content {
+    width: 100%;
+    max-width: 500px;
+    float: left;
+}
+
+h1, .pagetitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Squada One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 100px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #A6A743;
+    text-shadow: -5px 5px 0px #DF2631;
+}
+
+h2, .resume-section h3 {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+
+}
+.page h2 {
+    color: #FFFFFF;
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2em;
+    margin-bottom: 0
+}
+
+.project-image{
+    width:1000px;
+    margin-left: -100px;
+}
+.graphicexample{
+    max-width:800px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.job h4{
+    font-family: 'Cabin Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+.card {
+    float:left;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 20px 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card a {
+    display: block;
+    padding: 20px 20px 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: -5px 5px 0px #A6A743;
+    background-color: #FFFFFF;
+    color: #171717;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    
+}
+.card h3 {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    
+    font-family:  'Cabin Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.cta-buttons{
+    display: block;
+    width: 100%;
+}
+.cta-buttons :first-child {
+    margin-right:20px;
+}
+.button {
+    box-sizing: border-box;
+    padding: 12px 21px;
+    height: 80px;
+    line-height: 80px;
+    
+    font-family: 'Cabin Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    
+    color: #1E1E1E;
+    background: #A6A743;
+    border: 2px solid #FFFFFF;
+    box-shadow: -5px 5px 0px #DF2631;
+    }
+
+.button:hover {
+    background: #DF2631;
+    color: #FFFFFF;
+    box-shadow: -5px 5px 0px #A6A743;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .container, .homecontainer{
+        width: 100%;}
+    .card {
+        width: 50%;
+        max-width: 600px;
+    }
+    
+    main, main.hometitle {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 20px;
+    }
+    header .pagetitle{
+        margin-left: 20px;
+    }
+    main.hometitle {
+        margin-top: 0;
+    }
+    header nav {
+        margin-left: 20px;
+        height: 40px;
+    }
+    .content{
+        max-width: 400px;
+    }
+    .project-image, .graphicexample{
+        width:100%;
+        margin-left: 0;
+        padding: 20px 0 20px 0
+    }
+    .left-image, .content{
+        float: none;
+        display: block;
+        width: auto;
+        margin: 60px auto;
+    }
+    .left-image img {
+        box-sizing: border-box;
+        width: 80%;
+        display: block;
+        height: auto;
+        border-width: 10px 10px 50px 10px;
+    }
+    .button {
+        font-size: 18px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    main.hometitle, main.page {
+        width: 100%;
+        margin-top: 0px;
+    }
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .pagetitle {
+        font-size: 96px;
+        line-height: 96px;
+    }
+    header nav a{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .card h2{
+        font-size: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .cta-buttons :first-child {
+        margin-bottom: 12px;
+    }
+    .page h2{
+        font-size: 32px;
+        
+    }
+}
+@media (max-width: 400px) {
+    header .pagetitle, h1 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .left-image img {
+        width: 100%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    
+}

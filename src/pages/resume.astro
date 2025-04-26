@@ -1,5 +1,8 @@
 ---
 const pageTitle = "Resume - Nick Baker";
+import PageHead from '../components/PageHead.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -13,13 +16,7 @@ const pageTitle = "Resume - Nick Baker";
 	<body>
 		
         <div class="container">
-            <header >
-                <a href="/" class="pagetitle">Nick Baker</a>
-                <nav>
-                    <a href="/portfolio/" style="margin-right: 15px; ">Portfolio</a>
-                    <a href="/resume/">Resume</a>
-                </nav>
-            </header>
+            <PageHead />
             <main class="page">
                 <section class="resume-section">
                     <h2>Resume</h2>
@@ -128,7 +125,7 @@ const pageTitle = "Resume - Nick Baker";
                     <p>Minnesota State University Moorhead</p>
                 </section>
             </main>
-            <footer>    </footer>
+            <Footer />
             </div>
 	</body>
 </html>
